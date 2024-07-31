@@ -1,0 +1,115 @@
+@use "custom" as *;
+@use "mixins" as *;
+
+#hero-section {
+  padding: 8rem 0;
+}
+.hero {
+  /* Sizing */
+  width: 100vw;
+  min-height: 100dvh;
+  max-height: fit-content;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: $mylinear-gradient, url("../images/desktop.jpg");
+  background-size: cover; /* to cover the entire space */
+  background-position: center center;
+  background-repeat: no-repeat; /* So the image does not repeat */
+  background-attachment: fixed;
+  .row {
+    display: block;
+  }
+}
+.my-name {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  // <weight>: Use a value from 400 to 700
+  font-weight: 700;
+  font-style: normal;
+  //   font-size: 1.5em;
+  white-space: nowrap;
+  font-size: clamp(1rem, 10vw, 3rem);
+  color: $base-txt-color;
+}
+.hero-picture {
+  border: 5px solid $base-txt-color;
+}
+.hero-inner-left {
+  padding: 0.5em 0 2rem 0.5em;
+  background-color: pink;
+  background-image: $myradial-gradient;
+  border: 2px solid $base-txt-color;
+  color: $base-txt-color;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  @include my-shadow;
+  button {
+    /* Positioning and sizing */
+    display: block;
+    width: 7em;
+
+    /* Padding and margins */
+    padding: 0.2em 1em;
+    margin-top: 2em;
+    margin-inline: auto;
+
+    /* Text styles */
+    color: rgb(58, 27, 55); /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+
+    /* Border styles */
+    border: 3px solid $btn-border-color; /* CHANGE THIS LINE */
+    border-radius: 20px;
+    /* Background styles */
+    background-color: rgba(147, 112, 219, 0.8);
+  }
+  .inside-left {
+    min-width: 10em;
+    max-width: 30em;
+  }
+}
+.hero-inner-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    min-width: 10em;
+    max-width: 20em;
+  }
+}
+.emphasize {
+  color: $base-txt-color;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  font-family: caveat;
+  font-weight: 800;
+  position: relative;
+}
+.emphasize::after {
+  /* curved underline.
+  source: https://codepen.io/rukyasu/pen/jvZaNp */
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border: 4px solid $primaryColor;
+  border-color: $primaryColor transparent transparent transparent;
+  border-radius: 50%;
+}
+@include media-breakpoint-up(md) {
+  .hero .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+}

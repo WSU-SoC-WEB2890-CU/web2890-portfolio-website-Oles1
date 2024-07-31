@@ -1,0 +1,23 @@
+@use "custom" as *;
+@use "mixins" as *;
+#about {
+  min-height: fit-content;
+  padding: 8rem 0.5rem;
+}
+.inner-about {
+  //   background-image: $myradial-gradient;
+  background-color: whitesmoke;
+  padding: 1em 2em;
+}
+
+@include media-breakpoint-up(md) {
+  .inner-about {
+    padding: 1em 5em;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .inner-about {
+    padding: 1em 10em;
+  }
+}

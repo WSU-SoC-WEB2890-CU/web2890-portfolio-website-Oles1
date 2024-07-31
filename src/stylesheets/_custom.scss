@@ -1,0 +1,94 @@
+/* Necessary imports: bootstrap - fonts */
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+//My custom colors
+$primaryColor: #944e63;
+$secondaryColor: #b47b84;
+$tertiaryColor: #b47b84;
+$baseColor: #caa6a6;
+$base-txt-color: #151414;
+$btn-border-color: rgb(88, 9, 78);
+$myradial-gradient: radial-gradient(circle, #d9d4d4 20%, #caa6a6 93%, #b47b84 100%);
+$mylinear-gradient: linear-gradient(rgba(134, 65, 65, 0.8), rgba(0, 0, 0, 0.8));
+$primary: $primaryColor;
+$secondary: $secondaryColor;
+
+//CSS resetting
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Source: https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-elements-in-css/ */
+img::after {
+  content: attr(alt);
+
+  /* Some light styling */
+  font-weight: bold;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  text-align: center;
+  top: 1px;
+  width: 100%;
+}
+img[alt] {
+  text-align: center;
+  font-weight: bold;
+  color: hsl(0, 0%, 60%);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+//Elements styling
+body {
+  background-image: $myradial-gradient;
+  //   transition-property: background;
+  //   transition-duration: 10s;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 3px solid black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: auto;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  color: $base-txt-color;
+}
+.no-wrap {
+  white-space: nowrap;
+}

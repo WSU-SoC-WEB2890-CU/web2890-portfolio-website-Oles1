@@ -1,0 +1,62 @@
+@use "custom" as *;
+
+//Navbar styling
+.navbar {
+  background-image: $myradial-gradient;
+}
+
+nav img {
+  width: 5em;
+  height: auto;
+}
+.brandName {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  // <weight>: Use a value from 400 to 700
+  font-weight: 700;
+  font-style: normal;
+  //   font-size: 1.5em;
+  font-size: clamp(1.2rem, 8vw, 1.4rem);
+  color: $base-txt-color;
+}
+ul.navbar-nav li {
+  color: black;
+  // font-size: clamp(0.6rem, 1.8vw, 1.2rem);
+  font-size: clamp(0.6rem, 6vw, 1.2rem);
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+ul.navbar-nav li:not(:last-child) {
+  border-bottom: 4px solid $primaryColor;
+}
+
+ul.navbar-nav li:has(a:hover, a:focus) {
+  text-decoration: underline;
+  transition: 0.5s;
+  background-color: darken($primaryColor, 5%);
+}
+
+a.nav-link {
+  color: $base-txt-color !important;
+}
+
+// .nav-item:has(.nav-link.active) {
+//   text-decoration: underline;
+//   background-color: green;
+// }
+
+.nav-item {
+  background-color: $tertiaryColor;
+}
+@include media-breakpoint-up(lg) {
+  a.nav-link {
+    scale: 1.2;
+    transition: 0.5s;
+  }
+  ul.navbar-nav li:not(:last-child) {
+    border-bottom: none;
+    border-right: 4px solid $primaryColor;
+  }
+}

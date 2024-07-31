@@ -1,28 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
 
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
 
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+    <!-- Navigation  -->
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+    <!-- <nav class="navbar navbar-expand-md navbar-dark menu shadow w-75 mx-auto pt-0 pb-0"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow p-0 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" class="d-inline-block" alt="logo image" />
+          <span class="brandName">Papy Olenga</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero-section">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <script type="module" src="./javascripts/main.js"></script>
-</body>
+    <!-- Hero section -->
+    <section id="hero-section" class="hero container-fluid">
+      <div class="row mx-auto w-75">
+        <div class="hero-inner-left">
+          <div class="inside-left">
+            <h1>Hi, I am <span class="my-name">Papy Olenga</span></h1>
+            <h3>UI/UX Designer <small>and</small><span> Web Developer</span></h3>
+
+            <p>I help individuals and companies:</p>
+            <ul class="list-group">
+              <li class="list-group-item">strengthen their <span class="emphasize">online presence</span>,</li>
+              <li class="list-group-item">attract <span class="emphasize">more business</span>,</li>
+              <li class="list-group-item">
+                develop <span class="emphasize">innovative solutions</span> and
+                <span class="emphasize">web applications</span>
+              </li>
+            </ul>
+            <button>Contact Me</button>
+          </div>
+        </div>
+        <div class="hero-inner-right">
+          <img src="images/designer2.jpg" alt="papy olenga's photo" class="hero-picture img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section portfolio -->
+    <section id="portfolio" class="w-75 mx-auto shadow">
+      <h1 class="display-4 fw-bold text-capitalize text-center shadow">Recent projects
+        <div class="heading-line mb-1"></div>
+      </h1>
+      <div class="row row-cols-1 row-cols-md-3 g-2">
+        <div class="col">
+          <div class="card">
+            <img src="https://unsplash.it/g/250/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">The richest men</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Drag and Drop</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Case study</a>
+              <button type="button" class="btn btn-primary">2nd button</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://unsplash.it/g/250/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://unsplash.it/g/250/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://unsplash.it/g/250/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://unsplash.it/g/250/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://unsplash.it/g/250/150" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="w-75 mx-auto">
+      <div class="inner-about mx-auto">
+        
+        <h1 class="display-4 fw-bold text-capitalize text-center shadow">About Me
+          <div class="heading-line mb-1"></div>
+        </h1>
+        
+        <p>My name is Papy Olenga.</p>
+        <!-- <p>
+          I came across web programming fortuitously. I was trying to fit into a career path after my degree in Biology.
+          As I was exploring my options, I started learning Python programming language on Udemy. I loved it so much
+          that I would spend hours cramming knowledge without tiring at all. Instead of going the self-taught route, I
+          elected to follow a formal education from an accredited institution.
+        </p> -->
+        
+        <h4>Education:</h4>
+        <ul>
+          <li><b>Associate Degree</b> in Computer Sciences and Information Systems from Salt Lake Community College, Utah.
+          <p>- Certificates of Proficiency:</p>
+            <ul>
+            <li><b>Database Information Systems</b></li>
+            <li><b>Web Programming and Development</b>.</li>
+          </ul>
+          </li>
+          <li>Currently pursuing a Bachelor’s degree in <b>Web and User Experience</b> with a <b>Full stack Web Development</b> emphasis at Weber State University, Utah.</li>
+          
+        </ul>
+        
+        <p>
+          My training focuses on: <ul>
+            <li>understanding users and their needs,</li>
+            <li>designing websites, applications, and services that exceed those needs,</li>
+            <li>selecting the right toolkit for each task,</li>
+            <li>industry standards for responsive, accessible, and inclusive web design.</li>
+          </ul> 
+        </p>
+        <h4>Current tech stack:</h4>
+        
+
+        <p>• HTML5, • CSS3, • SASS, • Bootstrap 5, • AJAX, • Node JS • JQuery, •
+          Javascript, • PHP, • MySql, • GitHub, • APIs.
+        </p>
+        <h4>My other skills: </h4>
+        <p>UI/UX Design, Prototyping, Wireframing, Netlify, Figma, Adobe photoshop.</p>
+        <p>
+          Proficient in French (written and spoken). I am learning React and will be adding more tech
+          tools under my belt: Laravel, Django, SEO techniques.
+        </p>
+        <p>Hobbies: aerial video recording with my drone. </p> 
+        <!-- <h4>My core values: </h4>  
+            <ul>
+              <li><b>Honesty: </b>I promise to be truthful and transparent throughout our partnership: No deception and No misdirection.</li>
+              <li><b>Integrity: </b>I promise to keep my word and pursue only your satisfaction.</li>
+            </ul> -->
+      </div>
+    </section>
+
+
+  <!-- THE SERVICES SECTION -->
+  <section id="services" class="services w-75 mx-auto pt-5">
+    <div class="container pt-5">
+      <div class="row text-center">
+        
+        <h1 class="display-4 fw-bold text-capitalize text-center shadow">Services
+          <div class="heading-line mb-1"></div>
+        </h1>
+        <!-- <h1 class="display-3 fw-bold">Services</h1> -->
+        
+      </div>
+      <div class="row pt-2 pb-2 mt-0 mb-3">
+        <div class="col-md-6 border-right">
+          <div class="bg-white">
+            <h2 class="fw-bold text-capitalize">
+              <!-- Soluta exercitationem voluptatem labore cum necessitatibus temporibus nisi. -->
+              <ul class="ps-5 lh-lg responsive-text">
+                <li>Website design</li>
+                <li>User experience research</li>
+                <li>SEO optimization</li>
+                <li>Software development</li>
+              </ul>
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-6 gradient">
+          <div>
+            <h3 class="mb-1">Mission Statement:</h3>
+            <p class="fw-semibold lh-lg">
+<span class="fs-5 fw-bold">“Integrity”</span> and <span class="fs-5 fw-bold">“Honesty”</span>, my core values.</p> 
+<p class="fw-semibold lh-lg">I believe that web design is not just about aesthetics or functionality; it's about <strong>integrity</strong>. <br> I am committed to upholding the highest standards of <em>honesty, transparency, </em>and <em>authenticity</em> in every aspect of my work. <br> I honor the trust you place in me, and I strive to ensure that my designs reflect the values and intentions of the brands I serve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <!-- <div class="icon d-block bi bi-send-fill"></div> -->
+            <div class="icon d-block bi bi-code-slash"></div>
+            <h3 class="display-3--title mt-1">Web Design</h3>
+            <p class="lh-lg">
+              I design websites and web applications for mobile and desktop. From design to implementation, I work on your website's appearence, layout, and content. My <strong>responsive design</strong> approach guaranties your website is accessible from a diverse range of devices and screen sizes.
+
+            </p>
+            <a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/" target="_blank">
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="bi bi-arrow-right"></i></span>
+              </button>
+            </a>
+            
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="images/arts/web-design.png" alt="marketing illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+          <div class="services__pic">
+            <img src="images/arts/UX-art.png" alt="web development illustration" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <!-- <div class="icon d-block bi bi-code-slash"></div> -->
+            <div class="icon d-block bi bi-send-fill"></div>
+
+            <h3 class="display-3--title mt-1">User experience (UX) research </h3>
+            <p class="lh-lg">
+              UX research is a practical study of how users interact with your product, and how easily they can complete tasks and meet goals. UX research benefits: 
+              Discover users'needs, Implement the best solutions, Add realistic contexts and insights to design processes, Test and validate concepts, Increases conversion rates.
+              
+            </p>
+            <a href="https://www.interaction-design.org/literature/article/user-research-what-it-is-and-why-you-should-do-it" target="_blank">
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="bi bi-arrow-right"></i></span>
+              </button>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block bi bi-cloud-arrow-up"></div>
+            <h3 class="display-3--title mt-1">Search engine optimization (SEO)</h3>
+            <p class="lh-lg">
+              SEO is a set of practices to help your website rank higher in search results. SEO can bring more traffic to your website, which will increase both your visibility and revenue. SEO Benefits:
+              <ul>
+                <li>Brings more traffic to your Website</li>
+                <li>Increases Brand awareness</li>
+                <li>Increases competitiveness</li>
+                <li>Optimizes website for mobile users</li>
+                <li>Grows your online presence cost-effectively</li>
+              </ul>              
+            </p>
+            <a href="https://bootcamp.berkeley.edu/blog/benefits-of-seo/" target="_blank">
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="bi bi-arrow-right"></i></span>
+              </button>
+            </a>
+            
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic">
+            <img src="images/arts/SEO.png" alt="cloud hosting illustration" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+          <div class="services__pic">
+            <img src="images/arts/coding.png" alt="web development illustration" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <!-- <div class="icon d-block bi bi-code-slash"></div> -->
+            <div class="icon d-block bi bi-send-fill"></div>
+
+            <h3 class="display-3--title mt-1">Software development</h3>
+            <p class="lh-lg">
+              I am competent in custom full software development lifecycle: Planning - Development - Testing - Deployment - Maintenance, just to meet your needs. <br>
+              I can assist in troubleshooting and resolving issues in existing applications.
+            </p>
+            <!-- <a href="https://www.interaction-design.org/literature/article/user-research-what-it-is-and-why-you-should-do-it" target="_blank">
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="bi bi-arrow-right"></i></span>
+              </button>
+            </a> -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE GET STARTED SECTION -->
+  <section id="contact" class="get-started w-75 mx-auto">
+    <div class="container pt-5">
+      <div class="row text-center">
+        
+        <h1 class="display-3 fw-bold text-capitalize">Get started</h1>
+        <div class="heading-line"></div>
+        <div class="d-flex justify-content-center">
+          <p class="lh-lg text-start">
+            No job is too small, nothing is too hard. <br> Knowing the right people is sometimes all it takes! <br> My expertise is at your service. Please, contact me. 
+          </p>
+
+        </div>
+        
+      </div>
+
+      <div class="row text-white">
+        <div class="col-12 col-lg-6 gradient shadow p-3">
+          <div class="cta-info w-100">
+            <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+            <p class="lh-lg">
+              Welcome to a place where everything is possible. Let's speak life into your ideas.
+            </p>
+            <h3 class="display-3--brief">What will be the next step?</h3>
+            <ul class="cta-info__list">
+              <li>Tell me your idea</li>
+              <li>I prepare the proposal</li>
+              <li>We'll discuss it together.</li>
+              <li>I deploy your project.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 bg-white shadow p-3">
+          <div class="form w-100 pb-2">
+            <h4 class="display-3--title mb-5">start your project</h4>
+            <form action="#" class="row">
+              <div class="col-lg-6 col-md mb-3">
+                <input type="text" placeholder="First Name" id="inputFirstName"
+                  class="shadow form-control form-control-lg">
+              </div>
+              <div class="col-lg-6 col-md mb-3">
+                <input type="text" placeholder="Last Name" id="inputLastName"
+                  class="shadow form-control form-control-lg">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <input type="email" placeholder="Email address" id="inputEmail"
+                  class="shadow form-control form-control-lg">
+              </div>
+              <div class="col-lg-12 mb-3">
+                <textarea name="message" placeholder="Message" id="message" rows="8"
+                  class="shadow form-control form-control-lg"></textarea>
+              </div>
+              <div class="text-center d-grid mt-1">
+                <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
+                  submit
+                  <i class="bi bi-send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <i class="bi bi-chevron-up"></i>
+  </a>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>

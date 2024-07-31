@@ -1,3 +1,12 @@
-/* Your styles go here */
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+@use "custom";
+// Import components
+
+// Import sections
+@use "navbar";
+@use "hero";
+@use "portfolio";
+@use "mixins";
+@use "about";
+@use "typography";
+@use "services";
+@use "buttons";

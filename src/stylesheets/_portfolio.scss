@@ -1,0 +1,13 @@
+@use "custom" as *;
+@use "mixins" as *;
+
+#portfolio {
+  min-height: fit-content;
+  padding: 8rem 0.5rem;
+}
+.card img:hover,
+.card img:focus {
+  scale: 0.95;
+  transition: 0.5s;
+  @include my-shadow;
+}
