@@ -72,6 +72,12 @@
   //   background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
   background: $myradial-gradient;
 }
+
+.gradient-2 {
+  //   background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+  background: $myradial-gradient-2;
+}
+
 .responsive-text {
   font-size: clamp(1.4rem, 5vw, 2rem);
 }

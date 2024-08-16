@@ -12,6 +12,7 @@ $baseColor: #caa6a6;
 $base-txt-color: #151414;
 $btn-border-color: rgb(88, 9, 78);
 $myradial-gradient: radial-gradient(circle, #d9d4d4 20%, #caa6a6 93%, #b47b84 100%);
+$myradial-gradient-2: radial-gradient(circle, #d9d4d4 10%, #caa6a6 93%, #b47b84 100%);
 $mylinear-gradient: linear-gradient(rgba(134, 65, 65, 0.8), rgba(0, 0, 0, 0.8));
 $primary: $primaryColor;
 $secondary: $secondaryColor;
@@ -88,6 +89,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: $base-txt-color;
+  padding-bottom: 5rem;
 }
 .no-wrap {
   white-space: nowrap;
