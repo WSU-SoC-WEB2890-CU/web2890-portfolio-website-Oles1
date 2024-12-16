@@ -1,0 +1,42 @@
+@use "custom" as *;
+@mixin my-shadow {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@mixin gradient {
+  // background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+  background-image: linear-gradient(
+    to right bottom,
+    #007947,
+    #2e7c41,
+    #457e3c,
+    #588038,
+    #698136,
+    #778236,
+    #858338,
+    #92833b,
+    #a08441,
+    #ac844a,
+    #b88553,
+    #c2865e
+  );
+}
+@mixin gradient-1 {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+@mixin gradient-2 {
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin transitionProperty {
+  transition-duration: 1s;
+  transition-property: all;
+}

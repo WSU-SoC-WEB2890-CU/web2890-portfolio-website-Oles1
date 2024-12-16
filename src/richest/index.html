@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-1.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Richest People</title>
+  </head>
+  <body>
+    <h1>World's 10 Richest People in 2024</h1>
+    <div>
+      <button class="btn-task-description" id="btn-task-description">
+        <h2>Project description</h2>
+        <small>click here</small>
+        <i class="fa-solid fa-angles-down"></i>
+      </button>
+      <div class="task-description">
+        <p>This project's goal is to create a Javascript Sortable List App</p>
+        <ul>
+          <li>Create an ordered list (Top 10 richest people)</li>
+          <li>Scramble list items randomly</li>
+          <li>Allow user to drag and drop an item to a different position</li>
+          <li>Button to check if items are in the correct order</li>
+          <li>Show green for Correct order and red for Wrong order</li>
+        </ul>
+        <p>What I practiced in this project:</p>
+        <ul>
+          <li>DOM manipulation</li>
+          <li>Functions in Javascript</li>
+          <li>Event listeners</li>
+          <li>Array Methods of Javascript</li>
+          <li>Adding icons</li>
+        </ul>
+      </div>
+      <div class="challenge">
+        <h2>Challenge:</h2>
+        <p>
+          This is an unordered list of the <b>world's 10 richest people in 2024.</b> <br />
+          <i
+            ><a href="https://www.investopedia.com/articles/investing/012715/5-richest-people-world.asp" target="_blank"
+              >Source: here</a
+            > </i
+          ><br />
+          Your name is not there yet, but you will eventually make it to the top 10 one day.<br />
+          Can you arrange this list in descending order, starting from the richest?
+        </p>
+      </div>
+    </div>
+    <div class="main">
+      <p>Drag and drop the items into their corresponding spots. To check result, Click</p>
+      <button class="check-btn" id="check1">
+        Check Response
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <ul class="draggable-list" id="draggable-list"></ul>
+      <button class="check-btn" id="check2">
+        Check Response
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+    <script src="https://kit.fontawesome.com/f270eff03f.js" crossorigin="anonymous"></script>
+    <script src="script-1.js"></script>
+  </body>
+</html>
